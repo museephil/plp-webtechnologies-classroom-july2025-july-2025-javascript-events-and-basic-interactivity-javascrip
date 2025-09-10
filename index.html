@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive JavaScript Project</h1>
+    <button id="lightDarkToggle">🌙 Toggle Dark/Light</button>
+  </header>
+
+  <div class="container">
+    <!-- Side Panel -->
+    <aside class="side-panel">
+      <button class="menu-btn" data-target="counterSection">🎮 Counter Game</button>
+      <button class="menu-btn" data-target="faqSection">❓ FAQ</button>
+      <button class="menu-btn" data-target="formSection">📋 Form Validation</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Counter Game -->
+      <section class="card active" id="counterSection">
+        <h2>🎮 Counter Game</h2>
+        <p>Click the buttons to increase or decrease the counter.</p>
+        <div class="counter-box">
+          <button id="decrement">➖</button>
+          <span id="counter">0</span>
+          <button id="increment">➕</button>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="card" id="faqSection">
+        <h2>❓ FAQ</h2>
+        <div class="faq">
+          <button class="faq-question">What is this project about?</button>
+          <div class="faq-answer">It demonstrates JavaScript event handling, interactivity and form validation.</div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">Which technologies are used?</button>
+          <div class="faq-answer">HTML, CSS and JavaScript only.</div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">Who created it?</button>
+          <div class="faq-answer">Philip Musee David/PLP student.</div>
+        </div>
+      </section>
+
+      <!-- Form Validation -->
+      <section class="card" id="formSection">
+        <h2>📋 Form Validation</h2>
+        <form id="signupForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <small class="error" id="nameError"></small>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+          <small class="error" id="emailError"></small>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <small class="error" id="passwordError"></small>
+
+          <button type="submit">Submit</button>
+          <p id="formMessage"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Philip Musee David | Email: philipmuseedavid@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
